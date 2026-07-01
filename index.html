@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gibson Gnanasehar — Data / Business / Research Analyst</title>
+<style>
+  :root{--navy:#12239E;--blue:#118DFF;--ink:#1a1a2e;--mut:#5b6172;--bg:#f6f8fc;--card:#fff;--line:#e6ebf3}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  a{color:var(--blue);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  header{background:linear-gradient(135deg,#12239E,#1b3bd8);color:#fff;padding:54px 0 46px}
+  header h1{font-size:40px;letter-spacing:.5px}
+  header .role{font-size:19px;color:#bcd4ff;font-weight:600;margin:6px 0 10px}
+  header p.intro{max-width:760px;color:#e7eefc;font-size:15.5px}
+  .btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:24px;font-size:14px;font-weight:600;border:1.5px solid #ffffff55}
+  .btn.primary{background:#fff;color:var(--navy)}
+  .btn.ghost{color:#fff}
+  .btn.red{background:#E50914;color:#fff;border-color:#E50914}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:-28px auto 0;position:relative}
+  .stat{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:12px;padding:16px;text-align:center;box-shadow:0 6px 20px #12239e12}
+  .stat .n{font-size:24px;font-weight:800;color:var(--navy)}
+  .stat .l{font-size:12.5px;color:var(--mut);margin-top:3px}
+  section{padding:40px 0 8px}
+  h2{font-size:22px;color:var(--navy);margin-bottom:4px}
+  .sub{color:var(--mut);font-size:14px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .proj{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.18s;display:flex;flex-direction:column}
+  .proj:hover{transform:translateY(-4px);box-shadow:0 12px 26px #12239e1f;border-color:#bcd0f5}
+  .proj .thumb{height:150px;background:#0e1430;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .proj .thumb img{width:100%;height:100%;object-fit:cover}
+  .proj .body{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column}
+  .proj h3{font-size:15.5px;color:var(--ink);margin-bottom:6px}
+  .proj p{font-size:13px;color:var(--mut);flex:1}
+  .proj .tools{margin-top:10px;font-size:11.5px;color:var(--navy);font-weight:600}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .chip{background:#eaf1ff;color:var(--navy);border:1px solid #d4e2ff;border-radius:16px;padding:6px 13px;font-size:13px;font-weight:600}
+  footer{margin-top:40px;padding:30px 0;background:#0e1533;color:#c7d2f0;text-align:center;font-size:13.5px}
+  footer a{color:#8fc9ff}
+  @media(max-width:820px){.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.grid,.stats{grid-template-columns:1fr}header h1{font-size:32px}}
+</style></head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Gibson Gnanasehar</h1>
+    <div class="role">Data · Business · Research Analyst — Auckland, New Zealand</div>
+    <p class="intro">Master of Business Analytics graduate (University of Auckland) with 12+ years of prior business experience. I pair a full analytics toolkit — Python, R, SQL, Power BI and machine learning — with the business judgement to frame analysis that leaders can act on. Recent industry capstone as a Research Analyst with Technology Investment Network (TIN).</p>
+    <div class="btns">
+      <a class="btn red" href="netflix-dashboard.html">▶ Live Netflix Dashboard</a>
+      <a class="btn primary" href="Gibson_Gnanasehar_Analyst_CV_Visual_v2.pdf">Download CV</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/gibsong2">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/gibsonanalyticsnz">GitHub</a>
+      <a class="btn ghost" href="mailto:gibson.analytics.nz@gmail.com">Email</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="n">12+</div><div class="l">Years experience</div></div>
+    <div class="stat"><div class="n">Master's</div><div class="l">Business Analytics, UoA</div></div>
+    <div class="stat"><div class="n">12</div><div class="l">Analytics projects</div></div>
+    <div class="stat"><div class="n">Full-time</div><div class="l">NZ work rights</div></div>
+  </div>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="sub">Real datasets across the full analytics stack. Click any card for code, reports and visuals.</div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="sub">Languages, BI, modelling and delivery.</div>
+    <div class="skills">
+      <span class="chip">Python</span><span class="chip">R</span><span class="chip">SQL</span>
+      <span class="chip">Power BI (DAX)</span><span class="chip">Data Warehousing</span><span class="chip">Machine Learning</span>
+      <span class="chip">Regression</span><span class="chip">Clustering</span><span class="chip">Data Visualisation</span>
+      <span class="chip">CAPM / DCF</span><span class="chip">Excel</span><span class="chip">Requirements Analysis</span>
+      <span class="chip">Stakeholder Reporting</span>
+    </div>
+  </section>
+</div>
+
+<footer>
+  Gibson Gnanasehar · Auckland, New Zealand ·
+  <a href="mailto:gibson.analytics.nz@gmail.com">gibson.analytics.nz@gmail.com</a> ·
+  <a href="https://www.linkedin.com/in/gibsong2">LinkedIn</a> ·
+  <a href="https://github.com/gibsonanalyticsnz">GitHub</a>
+</footer>
+
+<script>
+const REPO="https://github.com/gibsonanalyticsnz/analytics-portfolio/tree/main/projects/";
+const IMG="https://raw.githubusercontent.com/gibsonanalyticsnz/analytics-portfolio/main/projects/";
+const P=[
+ ["tin200-data-foundation","TIN200 Data Foundation & Automation","Python pipeline validating the data behind NZ's largest tech-exporter ranking (real-client capstone).","Python · Excel"],
+ ["powerbi-oecd-storytelling","Power BI Dashboards — Netflix & OECD","Interactive Netflix content analytics + ethical OECD data storytelling.","Power BI · DAX · R"],
+ ["customer-segmentation-bank","Customer Segmentation — Bank of Twizel","Two-Step clustering of 9,800 banking customers into 4 strategy-ready segments.","SPSS"],
+ ["world-happiness-data-warehouse","World Happiness Data Warehouse","SQLite star-schema warehouse integrating SDG, happiness and GNI data.","SQL · SQLite"],
+ ["co2-emissions-forecasting","CO₂ Emissions & Energy Forecasting","Python web scraping & data integration projecting emissions to 2050.","Python · pandas"],
+ ["ml-models-python","Machine Learning Models (Python)","Tree regression, decision trees and Monte Carlo simulation.","Python · scikit-learn"],
+ ["ecommerce-delivery-regression","E-Commerce Delivery Time","Multiple linear regression predicting delivery time (Adj. R² 0.52).","R · tidyverse"],
+ ["loan-decision-logistic","Loan Decision Prediction","Logistic regression on the drivers of personal-loan uptake.","R"],
+ ["fintech-investment-appraisal","FinTech Investment Appraisal — RosterLab","CAPM/beta, DCF and sensitivity analysis on a NZ$10M expansion.","Excel"],
+ ["covid-vaccination-python","COVID Vaccination Impact","Python data integration & EDA across 200+ countries.","Python · pandas"],
+ ["project-schedule-evaluation","Project Schedule Evaluation — PredictNow","Critical-path feasibility and resource levelling for an AI launch.","ProjectLibre"],
+ ["platefulnz-poster","PlatefulNZ Analysis & Poster","R/Quarto statistical analysis presented as a research poster.","R · Quarto"]
+];
+document.getElementById("grid").innerHTML=P.map(p=>`
+ <a class="proj" href="${REPO}${p[0]}">
+   <div class="thumb"><img src="${IMG}${p[0]}/preview.png" alt="${p[1]}" loading="lazy"
+     onerror="this.parentNode.style.background='#12239E';this.style.display='none'"></div>
+   <div class="body"><h3>${p[1]}</h3><p>${p[2]}</p><div class="tools">${p[3]}</div></div>
+ </a>`).join("");
+</script>
+</body></html>
